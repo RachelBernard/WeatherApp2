@@ -1,0 +1,72 @@
+body {
+  background-color: #e8f0f2 !important;
+}
+
+h1 {
+  color: #4c4c6d;
+  font-size: 150%;
+  position: relative;
+  left: 100px;
+}
+
+h2 {
+  color: #4c4c6d;
+  position: relative;
+  left: 100px;
+}
+
+form {
+  position: relative;
+  left: 400px;
+  top: -50px;
+}
+
+.blurb {
+  position: relative;
+  top: -200px;
+  left: 550px;
+  font-size: 40px;
+  font-weight: 400;
+  color: #4c4c6d;
+}
+
+.card-body {
+  text-align: center;
+  background-color: #eeeeee;
+}
+
+h5 {
+  text-align: center;
+  color: #4c4c6d;
+  background: #e8f6ef;
+}
+
+.emoji {
+  font-size: 60px;
+}
+
+.today_emoji {
+  font-size: 80px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.container {
+  border: 2px solid gray;
+  border-radius: 40px;
+  display: block;
+  margin: 100px;
+  padding: 50px;
+  background-image: url("../images/sky.jpg");
+  background-size: 1315px;
+}
+
+.card-text {
+  color: #4c4c6d;
+}
+
+.card-title {
+  color: #4c4c6d;
+}
