@@ -82,3 +82,7 @@ a:link {
   top: -100px;
   left: 120px;
 }
+
+#cityInput {
+  background: #c9ccd5;
+}
