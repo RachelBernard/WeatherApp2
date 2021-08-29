@@ -75,3 +75,10 @@ a:link {
 .card-title {
   color: #4c4c6d;
 }
+
+.github {
+  color: #3c5186;
+  position: relative;
+  top: -100px;
+  left: 120px;
+}
