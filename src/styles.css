@@ -7,10 +7,6 @@ body {
   ) !important;
 }
 
-.app {
-  max-width: 1000px;
-}
-
 h1 {
   color: #4c4c6d;
   font-size: 150%;
