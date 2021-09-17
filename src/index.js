@@ -57,6 +57,8 @@ function displayTemp(response) {
 function changeToCel(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#degree0");
+  far.classList.remove("active");
+  cel.classList.add("active");
   let celTemp = (fahrenheitTemp - 32) / 1.8;
   temperatureElement.innerHTML = Math.round(celTemp);
 }
@@ -64,6 +66,8 @@ function changeToCel(event) {
 function changeToFar(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#degree0");
+  cel.classList.remove("active");
+  far.classList.add("active");
   temperatureElement.innerHTML = Math.round(fahrenheitTemp);
 }
 
