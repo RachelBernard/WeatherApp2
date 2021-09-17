@@ -20,17 +20,6 @@ day4.innerHTML = days[now.getDay() + 4];
 let day5 = document.querySelector("#day5");
 day5.innerHTML = days[now.getDay() + 5];
 
-//change degrees---**either equation or change unit in API key to "metric". figure this out later**
-function changeToCel(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#degree0");
-  let celTemp = (fahrenheitTemp - 32) * (5 / 9);
-  temperatureElement.innerHTML = Math.round(celTemp);
-}
-
-let cel = document.querySelector("#cel");
-cel.addEventListener("click", changeToCel);
-
 //function changeToFar(event) {
 // event.preventDefault();
 // let farTemp = (temperatureElement.innerHTML * 9) / 5 + 32;
@@ -75,5 +64,16 @@ function displayTemp(response) {
   let low0 = document.querySelector("#low0");
   low0.innerHTML = `Low: ${low} ℉`;
 }
+
+//change degrees---**either equation or change unit in API key to "metric". figure this out later**
+function changeToCel(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#degree0");
+  let celTemp = (fahrenheitTemp - 32) * (5 / 9);
+  temperatureElement.innerHTML = Math.round(celTemp);
+}
+
+let cel = document.querySelector("#cel");
+cel.addEventListener("click", changeToCel);
 
 let fahrenheitTemp = null;
