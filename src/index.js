@@ -20,16 +20,6 @@ day4.innerHTML = days[now.getDay() + 4];
 let day5 = document.querySelector("#day5");
 day5.innerHTML = days[now.getDay() + 5];
 
-//function changeToFar(event) {
-// event.preventDefault();
-// let farTemp = (temperatureElement.innerHTML * 9) / 5 + 32;
-// let temperatureElement = document.querySelector("#degree0");
-// temperatureElement.innerHTML = Math.round(farTemp);
-//}
-
-//let far = document.querySelector("#far");
-//far.addEventListener("click", changeToFar);
-
 //Search City
 function citySearch() {
   let input = document.querySelector("#cityInput");
@@ -71,7 +61,16 @@ function changeToCel(event) {
   temperatureElement.innerHTML = Math.round(celTemp);
 }
 
+function changeToFar(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#degree0");
+  temperatureElement.innerHTML = fahrenheitTemp;
+}
+
 let cel = document.querySelector("#cel");
 cel.addEventListener("click", changeToCel);
+
+let far = document.querySelector("#far");
+far.addEventListener("click", changeToFar);
 
 let fahrenheitTemp = null;
