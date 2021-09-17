@@ -46,11 +46,9 @@ form.addEventListener("submit", citySearch);
 //Getting Temp Data **figure out emoji situation later**
 function displayTemp(response) {
   console.log(response.data);
-  let currentTemp = Math.round(response.data.main.temp);
-  let degree0 = document.querySelector("#degree0");
-  degree0.innerHTML = currentTemp;
-
+  let temperatureElement = document.querySelector("#degree0");
   fahrenheitTemp = response.data.main.temp;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemp);
 
   let description = response.data.weather[0].description;
   let description1 = document.querySelector("#description1");
