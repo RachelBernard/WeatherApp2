@@ -64,7 +64,7 @@ function changeToCel(event) {
 function changeToFar(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#degree0");
-  temperatureElement.innerHTML = fahrenheitTemp;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemp);
 }
 
 let cel = document.querySelector("#cel");
