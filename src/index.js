@@ -67,7 +67,7 @@ function displayTemp(response) {
 function changeToCel(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#degree0");
-  let celTemp = ((fahrenheitTemp - 32) * 5) / 9;
+  let celTemp = (fahrenheitTemp - 32) / 1.8;
   temperatureElement.innerHTML = Math.round(celTemp);
 }
 
