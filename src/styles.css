@@ -82,3 +82,12 @@ a:link {
   top: -100px;
   left: 120px;
 }
+
+.weather-today .active {
+  color: #3c5186;
+  cursor: default;
+}
+
+.weather-today .active:hover {
+  text-decoration: none;
+}
