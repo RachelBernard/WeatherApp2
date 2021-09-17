@@ -32,15 +32,15 @@ day5.innerHTML = days[now.getDay() + 5];
 //let cel = document.querySelector("#cel");
 //cel.addEventListener("click", changeToCel);
 
-// function changeToFar(event) {
-//   event.preventDefault();
-//far = (cel * 1.8) + 32
-//   let degree0 = document.querySelector("#degree0");
-//   degree0.innerHTML = ;
-// }
+function changeToFar(event) {
+  event.preventDefault();
+  let farTemp = (0 * 9) / 5 + 32;
+  let temperatureElement = document.querySelector("#degree0");
+  temperatureElement.innerHTML = Math.round(farTemp);
+}
 
-// let far = document.querySelector("#far");
-// far.addEventListener("click", changeToFar);
+let far = document.querySelector("#far");
+far.addEventListener("click", changeToFar);
 
 //Search City
 function citySearch() {
