@@ -25,21 +25,21 @@ function changeToCel(event) {
   event.preventDefault();
   let celTemp = (temperatureElement.innerHTML - 32) * (5 / 9);
   let temperatureElement = document.querySelector("#degree0");
-  temperatureElement.innerHTML = Math.round(farTemp);
+  temperatureElement.innerHTML = Math.round(celTemp);
 }
 
 let cel = document.querySelector("#cel");
 cel.addEventListener("click", changeToCel);
 
-function changeToFar(event) {
-  event.preventDefault();
-  let farTemp = (temperatureElement.innerHTML * 9) / 5 + 32;
-  let temperatureElement = document.querySelector("#degree0");
-  temperatureElement.innerHTML = Math.round(farTemp);
-}
+//function changeToFar(event) {
+// event.preventDefault();
+// let farTemp = (temperatureElement.innerHTML * 9) / 5 + 32;
+// let temperatureElement = document.querySelector("#degree0");
+// temperatureElement.innerHTML = Math.round(farTemp);
+//}
 
-let far = document.querySelector("#far");
-far.addEventListener("click", changeToFar);
+//let far = document.querySelector("#far");
+//far.addEventListener("click", changeToFar);
 
 //Search City
 function citySearch() {
