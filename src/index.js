@@ -24,7 +24,7 @@ day5.innerHTML = days[now.getDay() + 5];
 function changeToCel(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#degree0");
-  let celTemp = (temperatureElement.innerHTML - 32) * (5 / 9);
+  let celTemp = (fahrenheitTemp - 32) * (5 / 9);
   temperatureElement.innerHTML = Math.round(celTemp);
 }
 
@@ -61,6 +61,8 @@ function displayTemp(response) {
   let degree0 = document.querySelector("#degree0");
   degree0.innerHTML = currentTemp;
 
+  fahrenheitTemp = response.data.main.temp;
+
   let description = response.data.weather[0].description;
   let description1 = document.querySelector("#description1");
   description1.innerHTML = description;
@@ -73,3 +75,5 @@ function displayTemp(response) {
   let low0 = document.querySelector("#low0");
   low0.innerHTML = `Low: ${low} ℉`;
 }
+
+let fahrenheitTemp = null;
