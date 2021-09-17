@@ -23,8 +23,8 @@ day5.innerHTML = days[now.getDay() + 5];
 //change degrees---**either equation or change unit in API key to "metric". figure this out later**
 function changeToCel(event) {
   event.preventDefault();
-  let celTemp = (temperatureElement.innerHTML - 32) * (5 / 9);
   let temperatureElement = document.querySelector("#degree0");
+  let celTemp = (temperatureElement.innerHTML - 32) * (5 / 9);
   temperatureElement.innerHTML = Math.round(celTemp);
 }
 
