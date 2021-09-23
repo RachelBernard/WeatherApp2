@@ -73,16 +73,10 @@ function displayTemp(response) {
 function changeToCel(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#degree0");
-  let highTempElement = document.querySelector("#high0");
-  let lowTempElement = document.querySelector("#low0");
   far.classList.remove("active");
   cel.classList.add("active");
   let celTemp = (fahrenheitTemp - 32) / 1.8;
   temperatureElement.innerHTML = Math.round(celTemp);
-  let highTemp = (high - 32) / 1.8;
-  highTempElement.innerHTML = Math.round(highTemp);
-  let lowTemp = (low - 32) / 1.8;
-  lowTempElement.innerHTML = Math.round(lowTemp);
 }
 
 function changeToFar(event) {
@@ -100,5 +94,3 @@ let far = document.querySelector("#far");
 far.addEventListener("click", changeToFar);
 
 let fahrenheitTemp = null;
-let high = null;
-let low = null;
