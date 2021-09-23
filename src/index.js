@@ -46,7 +46,10 @@ function displayTemp(response) {
 
   let iconElement = document.querySelector("#icon");
   let icon = response.data.weather[0].icon;
-  //iconElement.innerHTML = icon;
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${icon}@2x.png`
+  );
 
   //blurb info
   let high = Math.round(response.data.main.temp_max);
