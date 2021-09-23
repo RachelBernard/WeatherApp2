@@ -44,6 +44,14 @@ function displayTemp(response) {
   let description1 = document.querySelector("#description1");
   description1.innerHTML = description;
 
+  let windElement = document.querySelector("#wind");
+  wind = Math.round(response.data.wind.speed);
+  wind.innerHTML = wind;
+
+  let humidityElement = document.querySelector("#humidity");
+  humidity = response.data.main.humidity;
+  humidity.innerHTML = humidity;
+
   let iconElement = document.querySelector("#icon");
   let icon = response.data.weather[0].icon;
   iconElement.setAttribute(
