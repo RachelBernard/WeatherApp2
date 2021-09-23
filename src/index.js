@@ -81,6 +81,8 @@ function changeToCel(event) {
   temperatureElement.innerHTML = Math.round(celTemp);
   let highTemp = (high0 - 32) / 1.8;
   highTempElement.innerHTML = Math.round(highTemp);
+  let lowTemp = (low0 - 32) / 1.8;
+  lowTempElement.innerHTML = Math.round(lowTemp);
 }
 
 function changeToFar(event) {
