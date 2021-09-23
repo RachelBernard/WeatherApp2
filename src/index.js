@@ -44,6 +44,11 @@ function displayTemp(response) {
   let description1 = document.querySelector("#description1");
   description1.innerHTML = description;
 
+  let iconElement = document.querySelector("#icon");
+  let icon = response.data.weather[0].icon;
+  iconElement.innerHTML = icon;
+
+  //blurb info
   let high = Math.round(response.data.main.temp_max);
   let high0 = document.querySelector("#high0");
   high0.innerHTML = `High: ${high} ℉`;
