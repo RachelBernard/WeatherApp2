@@ -30,17 +30,9 @@ form {
   position: relative;
   top: -200px;
   left: 550px;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 400;
   color: #4c4c6d;
-}
-
-#wind {
-  font-size: 20px !important;
-}
-
-#precip {
-  font-size: 20px !important;
 }
 
 .card-body {
