@@ -78,9 +78,9 @@ function changeToCel(event) {
   let celTemp = (fahrenheitTemp - 32) / 1.8;
   temperatureElement.innerHTML = Math.round(celTemp);
 
-  let lowElement = document.querySelector("#low0");
-  let lowCel = (low - 32) / 1.8;
-  lowElement.innerHTML = Math.round(lowCel);
+  //let lowElement = document.querySelector("#low0");
+  //let lowCel = (low - 32) / 1.8;
+  //lowElement.innerHTML = Math.round(lowCel);
 }
 
 function changeToFar(event) {
