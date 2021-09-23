@@ -35,6 +35,14 @@ form {
   color: #4c4c6d;
 }
 
+.wind {
+  font-size: 20px;
+}
+
+.precip {
+  font-size: 20px;
+}
+
 .card-body {
   text-align: center;
   background-color: #e4d8dc;
