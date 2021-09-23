@@ -46,7 +46,7 @@ function displayTemp(response) {
 
   let iconElement = document.querySelector("#icon");
   let icon = response.data.weather[0].icon;
-  iconElement.innerHTML = icon;
+  //iconElement.innerHTML = icon;
 
   //blurb info
   let high = Math.round(response.data.main.temp_max);
