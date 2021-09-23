@@ -48,7 +48,7 @@ function displayTemp(response) {
   let icon = response.data.weather[0].icon;
   iconElement.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/${icon}@2x.png`
+    `https://openweathermap.org/img/wn/${icon}@2x.png`
   );
 
   //blurb info
