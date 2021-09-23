@@ -35,11 +35,11 @@ form {
   color: #4c4c6d;
 }
 
-.wind {
+#wind {
   font-size: 20px !important;
 }
 
-.precip {
+#precip {
   font-size: 20px !important;
 }
 
