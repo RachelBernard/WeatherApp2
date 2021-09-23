@@ -44,14 +44,6 @@ function displayTemp(response) {
   let description1 = document.querySelector("#description1");
   description1.innerHTML = description;
 
-  let windElement = document.querySelector("#wind");
-  wind = Math.round(response.data.wind.speed);
-  wind.innerHTML = wind;
-
-  let humidityElement = document.querySelector("#humidity");
-  humidity = response.data.main.humidity;
-  humidity.innerHTML = humidity;
-
   let iconElement = document.querySelector("#icon");
   let icon = response.data.weather[0].icon;
   iconElement.setAttribute(
@@ -67,6 +59,14 @@ function displayTemp(response) {
   let low = Math.round(response.data.main.temp_min);
   let low0 = document.querySelector("#low0");
   low0.innerHTML = `Low: ${low} ℉`;
+
+  let windElement = document.querySelector("#wind");
+  wind = Math.round(response.data.wind.speed);
+  wind.innerHTML = `Wind Speed: ${wind} m/hr`;
+
+  let humidityElement = document.querySelector("#humidity");
+  humidity = response.data.main.humidity;
+  humidity.innerHTML = `Humidity: ${humidity}%`;
 }
 
 //change degrees---**either equation or change unit in API key to "metric". figure this out later**
