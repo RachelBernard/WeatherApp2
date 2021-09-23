@@ -61,12 +61,12 @@ function displayTemp(response) {
   low0.innerHTML = `Low: ${low} ℉`;
 
   let windElement = document.querySelector("#wind");
-  wind = Math.round(response.data.wind.speed);
-  wind.innerHTML = `Wind Speed: ${wind} m/hr`;
+  windSpeed = Math.round(response.data.wind.speed);
+  wind.innerHTML = `Wind Speed: ${windSpeed} m/hr`;
 
   let humidityElement = document.querySelector("#humidity");
-  humidity = response.data.main.humidity;
-  humidity.innerHTML = `Humidity: ${humidity}%`;
+  humid = response.data.main.humidity;
+  humidity.innerHTML = `Humidity: ${humid}%`;
 }
 
 //change degrees---**either equation or change unit in API key to "metric". figure this out later**
