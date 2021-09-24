@@ -77,10 +77,6 @@ function changeToCel(event) {
   cel.classList.add("active");
   let celTemp = (fahrenheitTemp - 32) / 1.8;
   temperatureElement.innerHTML = Math.round(celTemp);
-
-  //let lowElement = document.querySelector("#low0");
-  //let lowCel = (low - 32) / 1.8;
-  //lowElement.innerHTML = Math.round(lowCel);
 }
 
 function changeToFar(event) {
@@ -98,5 +94,3 @@ let far = document.querySelector("#far");
 far.addEventListener("click", changeToFar);
 
 let fahrenheitTemp = null;
-high = null;
-low = null;
