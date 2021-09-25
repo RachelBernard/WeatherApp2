@@ -51,7 +51,7 @@ function displayTemp(response) {
     `https://openweathermap.org/img/wn/${icon}@2x.png`
   );
 
-  //blurb info
+  //card info
   let high = Math.round(response.data.main.temp_max);
   let high0 = document.querySelector("#high0");
   high0.innerHTML = `High: ${high} ℉`;
@@ -69,7 +69,7 @@ function displayTemp(response) {
   humidity.innerHTML = `Humidity: ${humid}%`;
 }
 
-//change degrees---**either equation or change unit in API key to "metric". figure this out later**
+//temp unit conversion
 function changeToCel(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#degree0");
