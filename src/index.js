@@ -21,7 +21,8 @@ let day5 = document.querySelector("#day5");
 day5.innerHTML = days[now.getDay() + 5];
 
 //Search City
-function citySearch() {
+function citySearch(event) {
+  event.preventDefault;
   let input = document.querySelector("#cityInput");
   let h1 = document.querySelector("h1");
   h1.innerHTML = `${input.value}`;
