@@ -91,3 +91,8 @@ a:link {
 .weather-today .active:hover {
   text-decoration: none;
 }
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
