@@ -20,6 +20,10 @@ ul {
   list-style-type: none;
 }
 
+a:link {
+  position: relative;
+  bottom: 10px;
+}
 .far {
   position: relative;
   bottom: 30px;
