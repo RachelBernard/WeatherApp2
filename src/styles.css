@@ -1,98 +1,72 @@
 body {
-  background-image: linear-gradient(
-    rgb(147, 181, 198),
-    rgb(201, 204, 213),
-    rgb(228, 216, 220),
-    rgb(255, 227, 227)
-  ) !important;
+  background-color: #f3f0d7;
+}
+.weather-app {
+  max-width: 550px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
+  border-color: #2f5d62;
+  background-color: #a7c4bc;
+  color: #2f5d62;
 }
 
-h1 {
-  color: #4c4c6d;
-  font-size: 150%;
-  position: relative;
-  left: 100px;
-}
-
-h2 {
-  color: #4c4c6d;
-  position: relative;
-  left: 100px;
-}
-
-form {
-  position: relative;
-  left: 400px;
-  top: -50px;
-}
-
-.blurb {
-  position: relative;
-  top: -200px;
-  left: 550px;
-  font-size: 30px;
-  font-weight: 400;
-  color: #4c4c6d;
-}
-
-.card-body {
-  text-align: center;
-  background-color: #e4d8dc;
-}
-
+h2,
 h5 {
-  text-align: center;
-  color: #3c5186;
-  background: #c9ccd5;
+  color: #5e8b7e;
 }
-
-.emoji {
-  font-size: 60px;
-}
-
-.today_emoji {
-  font-size: 80px;
+ul {
+  list-style-type: none;
 }
 
 a:link {
   text-decoration: none;
 }
 
-.container {
-  border: 2px solid gray;
-  border-radius: 40px;
-  display: block;
-  margin: 100px;
-  padding: 50px;
-  background-image: url("../images/sky.jpg");
-  background-size: 1315px;
+.current-temp {
+  font-size: 60px;
 }
 
-.card-text {
-  color: #4c4c6d;
+.weather-description {
+  font-size: 20px;
 }
 
-.card-title {
-  color: #4c4c6d;
-}
-
-.github {
-  color: #3c5186;
+.degree-indicator {
   position: relative;
-  top: -100px;
-  left: 120px;
+  bottom: 27px;
 }
 
-.weather-today .active {
-  color: #3c5186;
-  cursor: default;
+.current-weather-icon {
+  position: relative;
+  bottom: 20px;
 }
 
-.weather-today .active:hover {
-  text-decoration: none;
+.btn-primary {
+  background-color: #2f5d62 !important;
+  border-color: #dfeeea !important;
+  color: #dfeeea !important;
 }
 
-.weather-forecast {
-  margin-top: 20px;
+.form-control {
+  background-color: #dfeeea;
+  color: #2f5d62;
+}
+
+.forecast {
   text-align: center;
+  margin: 10px;
+}
+
+.forecast-date {
+  color: #2f5d62;
+}
+
+.forecast-low {
+  opacity: 0.6;
+}
+
+.forecast-icon {
+  position: relative;
+  right: 20px;
 }

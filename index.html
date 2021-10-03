@@ -1,134 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
+    <title>SheCodes Plus</title>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Weather App</title>
-    <link href="src/styles.css" rel="stylesheet" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link href="src/styles.css" rel="stylesheet" />
   </head>
-
   <body>
     <div class="container">
-      <h1>New York</h1>
-      <h2>date</h2>
-      <form>
-        <input
-          type="search"
-          placeholder="Search for a city"
-          id="cityInput"
-          autocomplete="off"
-        />
-        <input type="submit" value="Search" />
-      </form>
-      <div class="card" style="width: 23rem">
-        <div class="card-body">
-          <h5 class="card-title">Today</h5>
-          <p class="card-text">
-            <span id="description1"> Mostly Sunny </span>
-            <br />
-            <div class= "weather-today">
-            <img src='https://openweathermap.org/img/wn/10d@2x.png'
-            id="icon"
-            ></img>
-            <br />
-            <span id="degree0"> 82 </span>
-            <a id="far" href="#" class="active">℉ </a>|
-            <a id="cel" href="#">°C </a>
+      <div class="weather-app">
+        <form id="search-bar" class="mb-3">
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="search"
+                placeholder="City"
+                id="cityInput"
+                class="form-control"
+                autocomplete="off"
+              />
             </div>
-          </p>
-        </div>
-      </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Get Weather"
+                class="btn btn-primary w-120"
+              />
+            </div>
+          </div>
+        </form>
+        <h2>Newark</h2>
 
-      <p class="blurb">
-        <span id="high0">High: 90℉</span>
-        <br />
-        <span id="low0">Low: 90℉</span>
-        <br />
-        <span id="wind">Wind Speed: 0 m/hr</span>
-        <br />
-        <span id="humidity">Humidity 0%:</span>
-      </p>
-      <hr />
-      <h5>5-Day Forecast</h5>
+        <h5 id="date">Mon | 7:00</h5>
 
-      <div class="card-group">
-        <div class="card" style="width: 3rem">
-          <div class="card-body">
-            <h5 id="day1" class="card-title">Tue</h5>
-            <p class="card-text">
-              <img src='https://openweathermap.org/img/wn/10d@2x.png'></img>
-
-
-              <br />
-              Lo: <span id="low1">70</span>℉ Hi: <span id="high1">91</span>℉
-            </p>
+        <div class="row">
+          <div class="col-6">
+            <ul>
+              <li>
+                <span class="current-temp" id="degree0">82</span>
+                <span class="degree-indicator">
+                  <a id="far" href="#">°F</a> |
+                  <a id="cel" href="#">°C</a>
+                </span>
+              </li>
+              <li class="weather-description" id="description1">Clear</li>
+              <li id="wind">Wind:</li>
+              <li id="humidity">Humidity:</li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <img
+              src="http://openweathermap.org/img/wn/10d@2x.png"
+              width="180px"
+              id="icon"
+              class="current-weather-icon"
+            />
           </div>
         </div>
-        <div class="card" style="width: 3rem">
-          <div class="card-body">
-            <h5 id="day2" class="card-title">Wed</h5>
-            <p class="card-text">
-              <img src='https://openweathermap.org/img/wn/10d@2x.png'></img>
-
-
-              <br />
-              Lo: 70℉ Hi: 88℉
-            </p>
-          </div>
-        </div>
-        <div class="card" style="width: 3rem">
-          <div class="card-body">
-            <h5 id="day3" class="card-title">Thu</h5>
-            <p class="card-text">
-              <img src='https://openweathermap.org/img/wn/10d@2x.png'></img>
-
-              <br />
-              Lo: 64℉ Hi: 84℉
-            </p>
-          </div>
-        </div>
-        <div class="card" style="width: 3rem">
-          <div class="card-body">
-            <h5 id="day4" class="card-title">Fri</h5>
-            <p class="card-text">
-              <img src='https://openweathermap.org/img/wn/10d@2x.png'></img>
-
-
-              <br />
-              Lo: 66℉ Hi: 82℉
-            </p>
-          </div>
-        </div>
-        <div class="card" style="width: 3rem">
-          <div class="card-body">
-            <h5 id="day5" class="card-title">Sat</h5>
-            <p class="card-text">
-                            <img src='https://openweathermap.org/img/wn/10d@2x.png'></img>
-
-
-              <br />
-              Lo: 66℉ Hi: 84℉
-            </p>
-          </div>
-        </div>
+        <hr />
+        <div class="forecast" id="forecast">
+          
       </div>
     </div>
-
-    <a
-      class="github"
-      href="https://github.com/RachelBernard/WeatherApp2"
-      target="_blank"
-      >Open Source by RC 🙋🏽‍♀️</a
-    >
-
     <script src="src/index.js"></script>
   </body>
 </html>
