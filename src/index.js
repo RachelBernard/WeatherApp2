@@ -76,31 +76,6 @@ function displayTemp(response) {
   getForecast(response.data.coord);
 }
 
-//conversions
-function changeToCel(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#degree0");
-  far.classList.remove("active");
-  cel.classList.add("active");
-  let celTemp = (fahrenheitTemp - 32) / 1.8;
-  temperatureElement.innerHTML = Math.round(celTemp);
-}
-
-function changeToFar(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#degree0");
-  cel.classList.remove("active");
-  far.classList.add("active");
-
-  temperatureElement.innerHTML = Math.round(fahrenheitTemp);
-}
-
-let cel = document.querySelector("#cel");
-cel.addEventListener("click", changeToCel);
-
-let far = document.querySelector("#far");
-far.addEventListener("click", changeToFar);
-
 //6-Day Forecast
 function formatForecastDay(timestamp) {
   let date = new Date(timestamp * 1000);
