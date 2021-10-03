@@ -20,8 +20,9 @@ ul {
   list-style-type: none;
 }
 
-a:link {
-  text-decoration: none;
+.far {
+  position: relative;
+  bottom: 10px;
 }
 
 .current-temp {
