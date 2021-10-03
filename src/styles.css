@@ -22,7 +22,7 @@ ul {
 
 .far {
   position: relative;
-  bottom: 10px;
+  top: 10px;
 }
 
 .current-temp {
