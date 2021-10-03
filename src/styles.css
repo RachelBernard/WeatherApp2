@@ -20,7 +20,7 @@ ul {
   list-style-type: none;
 }
 
-a:link {
+.github {
   position: relative;
   bottom: 30px;
 }
