@@ -20,6 +20,10 @@ ul {
   list-style-type: none;
 }
 
+footer .github {
+  text-align: center;
+}
+
 .far {
   position: relative;
   bottom: 30px;
